@@ -1,0 +1,49 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-11-15 21:27+0800\n"
+"PO-Revision-Date: 2016-11-15 21:28+0800\n"
+"Last-Translator: \n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: app.py:31
+msgid "title"
+msgstr "標題"
+
+#: app.py:32
+msgid "sub_title"
+msgstr "目前瀏覽器語言"
+
+#: app.py:33
+msgid "translation"
+msgstr "翻譯"
+
+#: app.py:34
+msgid "country"
+msgstr "國家"
+
+#: app.py:35
+msgid "Taiwan"
+msgstr "台灣"
+
+#: app.py:36
+msgid "japan"
+msgstr "日本"
+
+#: app.py:37
+msgid "US"
+msgstr "美國"
+
