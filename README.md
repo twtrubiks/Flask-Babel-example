@@ -1,7 +1,7 @@
-# Flask-Babel(多國語言轉換)
+# Flask-Babel(多國語言轉換) example
 How Use Flask-Babel on Windows - Python Flask
 
-* [Demo]()  
+* [Demo](https://youtu.be/3mBodR0uWfo)  
 
 使用Python [Flask](http://flask.pocoo.org/) 搭配 [Flask-Babel](https://pythonhosted.org/Flask-Babel/) 快速實現多國語系轉換，希望這個簡單的範例可以幫助想要學習的朋友。
 
