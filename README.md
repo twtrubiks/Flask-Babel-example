@@ -42,6 +42,8 @@ pip install flask-babel
 BABEL_DEFAULT_LOCALE="en"
 BABEL_DEFAULT_TIMEZONE="UTC"
 ```
+BABEL_DEFAULT_LOCALE 代表你默認要顯示的語言
+
 ![alt tag](http://i.imgur.com/MkYNAqA.png)
 
 程式碼( app.py )裡設定
@@ -97,12 +99,44 @@ pybabel compile -d translations
 ``` 
 pybabel update -i messages.pot -d translations
 ```
+如果你又有新增需要翻譯的文字，這時候你該怎麼辦呢 ?
+
+首先，先執行下方的指令，讓他重新掃一次整個目錄
+``` 
+pybabel extract -F babel.cfg -o messages.pot .
+```
+
+執行後你會發現 <b> messages.pot</b> 裡面多了你剛剛的更新 (也就是新增加的文字)
+
+由於 <b> messages.pot</b> 更新了，所以必須要再執行以下指令
+
+``` 
+pybabel update -i messages.pot -d translations
+```
+
+你會發現 en 資料夾(這裡舉例英文) 裡面的  <b>messages.po</b> 多了你剛剛的更新內容
+
+這時候，再翻譯，翻譯完畢後，再用以下的指令編譯就完成了
+
+``` 
+pybabel compile -d translations
+```
+
+以上可能會有點小複雜，但多做幾次你就會了解了 :smile:
 
 接著使用下列指令即可運行
+
 ``` 
 python app.py
 ```
 
+P.S
+
+通常翻譯我們用的語法是
+``` 
+gettext("string")
+```
+但要注意，這個 "string" 裡面的文字，如果有要用的 "%" 這個符號，必須用 <b>全形</b> !! 如果你用 <b>半形</b> 會出問題。
 
 ## 執行畫面
 
