@@ -1,3 +1,4 @@
+#coding=utf-8
 from flask import *
 from flask_babel import *
 
@@ -35,7 +36,7 @@ def index():
     Taiwan = gettext("Taiwan")
     Japan = gettext("japan")
     US = gettext("US")
-
+    test = gettext("<b>我會變亂碼</b>")
     return render_template("index.html", **locals())
 
 

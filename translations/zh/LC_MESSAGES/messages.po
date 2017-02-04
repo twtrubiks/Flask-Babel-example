@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-03 21:35+0800\n"
+"POT-Creation-Date: 2017-02-04 17:59+0800\n"
 "PO-Revision-Date: 2016-11-15 21:28+0800\n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -18,31 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: app.py:31
+#: app.py:32
 msgid "title"
 msgstr "標題"
 
-#: app.py:32
+#: app.py:33
 msgid "sub_title"
 msgstr "目前瀏覽器語言"
 
-#: app.py:33
+#: app.py:34
 msgid "translation"
 msgstr "翻譯"
 
-#: app.py:34
+#: app.py:35
 msgid "country"
 msgstr "國家"
 
-#: app.py:35
+#: app.py:36
 msgid "Taiwan"
 msgstr "台灣"
 
-#: app.py:36
+#: app.py:37
 msgid "japan"
 msgstr "日本"
 
-#: app.py:37
+#: app.py:38
 msgid "US"
 msgstr "美國"
+
+#: app.py:39
+msgid "<b>我會變亂碼</b>"
+msgstr "<b>成功</b>"
 

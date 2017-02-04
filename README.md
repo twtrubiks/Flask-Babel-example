@@ -138,6 +138,51 @@ gettext("string")
 ```
 但要注意，這個 "string" 裡面的文字，如果有要用的 "%" 這個符號，必須用 <b>全形</b> !! 如果你用 <b>半形</b> 會出問題。
 
+接下來一個要注意的是只會發生在 <b>中文</b> ，仔細看一下我的 app.py 裡的 38、39 行
+``` 
+test = gettext("<b>我會變亂碼</b>")
+```
+當我執行 compile ，也就是在 cmd 執行下方指令
+``` 
+pybabel compile -d translations
+```
+你會發現你的模板竟然變亂碼了，如下圖
+
+![alt tag](http://i.imgur.com/Wh4Lhie.jpg)
+
+該怎麼解決呢 ?
+
+其實這是編碼問題 !!  解決方法很簡單
+
+首先，在 <b>app.py</b> 的第一行輸入 
+``` 
+#coding=utf-8
+```
+這樣可以解決掉編碼問題
+
+![alt tag](http://i.imgur.com/CbQALOJ.jpg)
+
+接著，在 <b>index.html</b> 裡面的第 14 行，必須這樣寫
+
+``` 
+<p>{{ test |safe }}</p>
+```
+
+要多加上一個 safe
+
+這樣才會顯示 <b>成功</b> 加粗體，如下圖
+
+![alt tag](http://i.imgur.com/SBFNm1Z.jpg)
+
+不然他會顯示
+
+![alt tag](http://i.imgur.com/4pKd9wN.jpg)
+
+更多說明可以參考 [jinja working-with-automatic-escaping](http://jinja.pocoo.org/docs/2.9/templates/#working-with-automatic-escaping)
+
+
+
+
 ## 執行畫面
 
 瀏覽器語系 - 英文<br>
